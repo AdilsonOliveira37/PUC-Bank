@@ -1,6 +1,6 @@
 # PUC-Bank
 
-<p><h1>Nome do produto:</h></p>
+<p><h1>Nome do produto:</h1></p>
 <p>Puc Bank</p>
 <br>
 <p><h1>Componentes do grupo:</h1></p>
