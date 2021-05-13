@@ -79,7 +79,19 @@ public class Conta {
         } else {
             conta = "Conta inválida!";
         }
-
         return conta;
+    }
+
+    /**
+     * Realiza um deposito na conta passada como arametro.
+     * 
+     */
+    public void depositar(float valor) {
+        if (this.getStatus()) {
+            this.setSaldo(this.getSaldo() + valor);
+            System.out.println("Depósito realizado na conta de " + this.cliente.getNome());
+        } else {
+            System.out.println("Não foi possível realizar o depósito em uma conta fechada.");
+        }
     }
 }
