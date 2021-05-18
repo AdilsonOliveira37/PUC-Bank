@@ -94,4 +94,27 @@ public class Conta {
             System.out.println("Não foi possível realizar o depósito em uma conta fechada.");
         }
     }
+        /**
+     * Retorna o saque realizado.
+     * 
+     * @param saque armazena a resposta do saque feito
+     * @param valor quantidade negociada
+     * @return saque.
+     */
+    public String sacar(float valor) {
+        String saque;
+
+        if (this.getStatus()) {
+            if (this.getSaldo() >= valor) {
+                this.setSaldo(this.getSaldo() - valor);
+                saque = "Saque realizado na conta de " + this.cliente.getNome();
+            } else {
+                saque = "Saldo insuficiente para saque";
+            }
+        } else {
+            saque = "Impossível sacar de uma conta fechada!";
+        }
+
+        return saque;
+    }
 }
