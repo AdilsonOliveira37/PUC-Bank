@@ -117,4 +117,16 @@ public class Conta {
 
         return saque;
     }
+
+    /**
+     * Exibe o extrato da conta.
+     * 
+     * @param data  data periodo
+     * @param agora data da operacao
+     */
+    public void extrato() {
+        DateTimeFormatter data = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDateTime agora = LocalDateTime.now();
+        System.out.println("\nSeu saldo é de: " + this.getSaldo() + " \nData da operação: " + data.format(agora));
+    }
 }
