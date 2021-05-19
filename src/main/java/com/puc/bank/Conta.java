@@ -147,4 +147,22 @@ public class Conta {
             System.out.println("Impossível pagar de uma conta fechada!");
         }
     }
+
+     /**
+     * Faz o pagamento da tarifa anual.
+     * 
+     */
+    public void tarifaAnual() {
+        if (this.getTipo().equals("CC")) {
+            this.setValorTarifa(120);
+        } else if (this.getTipo().equals("CP")) {
+            this.setValorTarifa(200);
+        }
+        if (this.getStatus()) {
+            this.setSaldo(this.getSaldo() - this.getValorTarifa());
+            System.out.println("Mensalidade paga com sucesso!");
+        } else {
+            System.out.println("Impossível pagar de uma conta fechada!");
+        }
+    }
 }
