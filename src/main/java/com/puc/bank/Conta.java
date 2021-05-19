@@ -129,4 +129,22 @@ public class Conta {
         LocalDateTime agora = LocalDateTime.now();
         System.out.println("\nSeu saldo é de: " + this.getSaldo() + " \nData da operação: " + data.format(agora));
     }
+
+    /**
+     * Faz o pagamento da tarifa mensal.
+     * 
+     */
+    public void tarifaMensal() {
+        if (this.getTipo().equals("CC")) {
+            this.setValorTarifa(12);
+        } else if (this.getTipo().equals("CP")) {
+            this.setValorTarifa(20);
+        }
+        if (this.getStatus()) {
+            this.setSaldo(this.getSaldo() - this.getValorTarifa());
+            System.out.println("Mensalidade paga com sucesso!");
+        } else {
+            System.out.println("Impossível pagar de uma conta fechada!");
+        }
+    }
 }
