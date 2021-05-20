@@ -18,5 +18,9 @@ public class App {
         Cliente cliente = new Cliente("", "");
         Conta conta = new Conta(cliente);
         conta.abrirConta("CC");
+        conta.depositar(100);
+        conta.sacar(500);
+        conta.tarifaMensal();
+        conta.extrato();
     }
 }

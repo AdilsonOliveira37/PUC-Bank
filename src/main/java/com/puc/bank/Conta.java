@@ -165,4 +165,10 @@ public class Conta {
             System.out.println("Impossível pagar de uma conta fechada!");
         }
     }
+    
+    @Override
+    public String toString() {
+        return "Conta{" + "cliente=" + cliente + ", numConta=" + numConta + ", tipo='" + tipo + '\'' + ", saldo="
+                + saldo + ", status=" + status + ", valorTarifa=" + valorTarifa + '}';
+    }
 }
