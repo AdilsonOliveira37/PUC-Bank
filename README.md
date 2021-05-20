@@ -17,3 +17,4 @@
 <p>Como gerente bancário, eu quero que os associados possam verificar seu saldo para que assim eles saibam e tenham consciência do valor do seu capital.</p>
 <p>Como gerente bancário, eu quero que os associados possam efetuar a mensalidade do banco, para que a tarifa mensal e anual sejam pagas.</p>
 <p>Como gerente bancário, eu quero que os associados possam tirar um extrato de suas atividades no banco, para que possam ter controle de todas as entradas e saídas.</p>
+<div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embeddedchart/5b7feb09-832f-4c5d-bfcf-248432693fb0" id="-FpEUO0kLE01"></iframe></div>
